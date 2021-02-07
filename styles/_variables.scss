@@ -1,0 +1,19 @@
+//Colors
+$primary: #841F1F;
+$secondary: #CD2E2E;
+
+//Fonts
+$montserrat: 'Montserrat', sans-serif;
+
+//Breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+//Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
