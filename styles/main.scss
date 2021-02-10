@@ -2,6 +2,8 @@
 @import './ch-creation';
 @import './card';
 @import './input';
+@import './gender-selec';
+@import './texts';
 
 * {
     margin: 0;
@@ -13,4 +15,45 @@ body {
     background: $bg-gradient;
     min-height: 100vh;
     font-family: $poppins;
+    color: white;
+    padding-top: 100px;
+    overflow: hidden;
+
+    .bg-circle {
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
+        border-radius: 50vh;
+        z-index: -1;
+        opacity: .3;
+
+        &--top {
+            top: -40vh;
+            right: -80px;
+            background-color: #FFD7A8;
+        }
+
+        &--right {
+            top: 35vh;
+            right: -40vh;
+            background-color: #FFF8BB;
+        }
+
+        &--left {
+            top: 40vh;
+            right: 20vh;
+            background-color: #FF7979;
+        }
+    }
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inactive {
+    display: none;
 }

@@ -36,3 +36,33 @@
 input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+button {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 55px;
+    border-radius: 27px;
+    background: none;
+    color: #FFF;
+    border: #FFF 3px solid;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: translateY(4px);
+        opacity: .8;
+    }
+
+    &:disabled {
+        transform: translateY(4px);
+        opacity: .8;
+    }
+}

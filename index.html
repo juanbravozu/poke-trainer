@@ -10,10 +10,27 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 class="title title--center">Create your trainer</h1>
 
-    <section class="ch-creation">
-        <h1>Create your trainer</h1>
+    <section class="gender">
+        <div class="card gender__option">
+            <div class="card__bg"></div>
 
+            <img src="./assets/boy.png" alt="">
+
+            <h2>BOY</h2>
+        </div>
+
+        <div class="card gender__option">
+            <div class="card__bg"></div>
+
+            <img src="./assets/girl.png" alt="">
+
+            <h2>GIRL</h2>
+        </div>
+    </section>
+
+    <section class="ch-creation inactive">
         <div class="container">
             <form>
                 <div class="input__container">
@@ -41,14 +58,14 @@
                 <h2>GIRL</h2>
             </div>
         </div>
-
-        <button type="button">Create</button>
-
-        <div class="bg-circle bg-circle--top"></div>
-        <div class="bg-circle bg-circle--right"></div>
-        <div class="bg-circle bg-circle--left"></div>
     </section>
-        
 
+    <button type="button" disabled>Continue</button>
+
+    <div class="bg-circle bg-circle--top"></div>
+    <div class="bg-circle bg-circle--right"></div>
+    <div class="bg-circle bg-circle--left"></div>
+
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
