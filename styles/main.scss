@@ -52,8 +52,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: opacity .3s ease-out;
 }
 
 .inactive {
     display: none;
+    opacity: 0;
 }
