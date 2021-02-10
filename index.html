@@ -4,32 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
-    
-    <form>
-        <input class="input" type="text" placeholder="Nombre">
-        <div>
-            <p>Género</p>
 
-            <div class="radio__container">
-                <div> 
-                    <input type="radio" name="gender" id="male">
-                    <label for="male">Hombre</label>
+    <section class="ch-creation">
+        <h1>Create your trainer</h1>
+
+        <div class="container">
+            <form>
+                <div class="input__container">
+                    <label for="name">Name</label>
+                    <input class="input" type="text" id="name">   
                 </div>
-    
-                <div>
-                    <input type="radio" name="gender" id="female">
-                    <label for="female">Mujer</label>
-                </div>
-            </div>            
-        </div>
         
-        <input class="input" type="number" placeholder="Edad">
-        <input class="input" type="text" placeholder="Hobby">
-    </form>
+                <div class="input__container">
+                    <label for="age">Age</label>
+                    <input class="input" type="number" id="age">
+                </div>
+        
+                <div class="input__container">
+                    <label for="hobby">Hobby</label>
+                    <input class="input" type="text" id="hobby">
+                </div>
+        
+            </form>
+
+            <div class="card">
+                <div class="card__bg"></div>
+
+                <img src="./assets/girl.png" alt="">
+
+                <h2>GIRL</h2>
+            </div>
+        </div>
+
+        <button type="button">Create</button>
+
+        <div class="bg-circle bg-circle--top"></div>
+        <div class="bg-circle bg-circle--right"></div>
+        <div class="bg-circle bg-circle--left"></div>
+    </section>
+        
 
 </body>
 </html>

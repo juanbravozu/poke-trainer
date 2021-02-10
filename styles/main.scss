@@ -1,11 +1,16 @@
 @import './variables';
-@import './form';
+@import './ch-creation';
+@import './card';
+@import './input';
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: $secondary;
+    background: $bg-gradient;
+    min-height: 100vh;
+    font-family: $poppins;
 }

@@ -1,0 +1,85 @@
+.ch-creation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    padding-top: 120px;
+
+    h1 {
+        font-size: 40px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 16%;
+        margin-top: 3%;
+    }
+
+    .bg-circle {
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
+        border-radius: 50vh;
+        z-index: -1;
+        opacity: .3;
+
+        &--top {
+            top: -40vh;
+            right: -80px;
+            background-color: #FFD7A8;
+        }
+
+        &--right {
+            top: 35vh;
+            right: -40vh;
+            background-color: #FFF8BB;
+        }
+
+        &--left {
+            top: 40vh;
+            right: 20vh;
+            background-color: #FF7979;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    button {
+        position: relative;
+        margin: 0 auto;
+        width: 250px;
+        height: 55px;
+        border-radius: 27px;
+        background: none;
+        color: #FFF;
+        border: #FFF 3px solid;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform .2s ease-out;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            transform: translateY(4px);
+            opacity: .8;
+        }
+    }
+}
+
+
+

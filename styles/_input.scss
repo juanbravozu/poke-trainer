@@ -1,0 +1,38 @@
+.input {
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    color: $primary;
+    font-size: 18px;
+    font-weight: 400;
+    border: #C74D63 1px solid;
+    transition: border-width .1s ease-out;
+
+    &:focus {
+        outline: none;
+        border-width: 3px;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0 0 5px 15px;
+        }
+    }
+}
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
