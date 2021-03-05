@@ -42,4 +42,8 @@
             transform: scale(1.05);
         }
     }
+
+    * {
+        pointer-events: none;
+    }
 }
